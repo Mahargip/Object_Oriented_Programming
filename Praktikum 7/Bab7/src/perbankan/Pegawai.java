@@ -12,13 +12,14 @@ public class Pegawai {
     public int nip;
     public String nama;
     
-    public Pegawai(int nip_pegawai){
-        this(nip_pegawai, "NoName");
+    public Pegawai(int nip){
+       this.nip = nip;
+       nama = "Noname";
     }
     
-    public Pegawai(int nip_pegawai, String nama_pegawai){
-        this.nip = nip_pegawai;
-        this.nama = nama_pegawai;
+    public Pegawai(int nip, String nama){
+        this.nip = nip;
+        this.nama = nama;
     }
 }
 
