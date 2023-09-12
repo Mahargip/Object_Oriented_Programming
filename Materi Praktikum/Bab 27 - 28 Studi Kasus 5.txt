@@ -1,0 +1,6 @@
+Buatlah sebuah program untuk menyimpan dan menampilkan Todo List.
+Program dapat menyimpan Task yang berisi judul task dan deskripsi.
+Program dapat mengubah/edit Task dan juga menghapusnya.
+Program menampilkan menampilkan seluruh Task yang tersimpan.
+Data Task disimpan dalam ArrayList,
+dalam sebuah class khusus yang dianggap sebagai DataBase.

@@ -1,0 +1,12 @@
+Sebuah program memiliki beberapa object sebagai berikut:
+Mahasiswa, Dosen, Karyawan, KetuaDepartemen, KetuaProdi, dan KepalaBagian.
+Object-object tersebut memiliki data dan fungsi sebagai berikut:
+Mahasiswa : id, nama, dosenWali, mengikutiPerkuliahan, belajar, mengerjakanTugas
+Dosen : id, nama, mengajar, mengabdi, meneliti
+Karyawan : id, nama, bekerja
+KetuaProdi dan KetuaDepartemen pasti adalah seorang dosen,
+namun memiliki fungsi tambahan yaitu menjalankanJabatan.
+KepalaBagian memiliki fungsi menjalankanJabatan.
+Dalam sistem ada Karyawan dan juga Dosen yang menjadi KepalaBagian.
+
+Silahkan dirancang class diagram untuk kasus tersebut!

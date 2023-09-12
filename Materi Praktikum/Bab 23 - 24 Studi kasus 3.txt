@@ -1,0 +1,8 @@
+1. Sebuah program Kalkulator bola membutuhkan
+object View untuk menerima inputan diameter,
+oject Calculator untuk melakukan perhitungan, dan
+object Ball sebagai model dalam program.
+Buatlah desain class diagram untuk program tersebut!
+
+2. Modifikasi program komputer tersebut
+sehingga bisa menghitung Ball dan Cube!

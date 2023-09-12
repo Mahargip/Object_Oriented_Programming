@@ -33,4 +33,22 @@ public class Nasabah {
     public Tabungan getTabungan(){
         return tabungan;
     }
+    
+    //
+    public void setSaldo(int saldo) {
+        tabungan = new Tabungan(saldo);
+    }
+    
+    public int getSaldo() {
+        return tabungan.getSaldo();
+    }
+    
+    public void setNamaAwal(String namaAwal){
+        this.namaAwal = namaAwal;
+    }
+    
+    public void setNamaAkhir(String namaAkhir){
+        this.namaAkhir = namaAkhir;
+    }
+    
 }

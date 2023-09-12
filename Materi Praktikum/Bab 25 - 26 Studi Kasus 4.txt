@@ -1,0 +1,24 @@
+Buatlah Class Diagram dan Program untuk Register dan Login
+
+Data yang diminta saat Login:
+- username
+- password
+
+Data yang disimpan saat Register:
+- name
+- username
+- password
+- phone
+- address
+
+Tampilan awal LoginView
+Alur Register => LoginView -> RegisterView -> LoginView
+Alur Login    => LoginView -> MainView
+
+
+MainView menampilkan:
+data user yang berhasil login
+- name
+- phone
+- address
+

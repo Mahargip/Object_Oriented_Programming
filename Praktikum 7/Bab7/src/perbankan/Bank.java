@@ -30,4 +30,27 @@ public class Bank {
     public Nasabah getNasabah(int indeks){
         return nasabah[indeks];
     }
+
+    //
+    public void tambahNasabah(Nasabah nasabah) {
+        this.nasabah[jumlahNasabah] = nasabah;
+        jumlahNasabah++;
+    }
+    
+    public boolean ubahNasabah(String namaAwalLama, String namaAkhirLama, String namaAwalBaru, String namaAkhirBaru){
+        boolean status = false;
+        
+        for (Nasabah nasabahCek : nasabah){
+            if (nasabahCek.getNamaAkhir().equals(namaAkhirLama)){
+                if (nasabahCek.getNamaAwal().equals(namaAwalLama)){
+                    nasabahCek.setNamaAwal(namaAwalBaru);
+                    nasabahCek.setNamaAkhir(namaAkhirBaru);
+                    status = true;
+                    break;
+                }
+            }
+        }
+        return status;
+    }
+    
 }
