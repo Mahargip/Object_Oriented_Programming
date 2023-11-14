@@ -35,6 +35,9 @@ public class TarikView extends javax.swing.JFrame {
         txtNamaAwal.setText(namaAwal);
         txtNamaAkhir.setText(namaAkhir);
         txtSaldo.setText(saldo);
+        
+        txtNamaAwal.setEnabled(false);
+        txtNamaAkhir.setEnabled(false);
         txtSaldo.setEnabled(false);
     }
     

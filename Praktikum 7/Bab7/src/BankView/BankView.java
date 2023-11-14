@@ -94,6 +94,7 @@ public class BankView extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(tableBank);
 
+        btnSimpan.setBackground(new java.awt.Color(0, 153, 204));
         btnSimpan.setText("Simpan");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +116,7 @@ public class BankView extends javax.swing.JFrame {
 
         lblSaldo.setText("Saldo");
 
+        btnHapus.setBackground(new java.awt.Color(255, 51, 0));
         btnHapus.setText("Hapus");
         btnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +124,7 @@ public class BankView extends javax.swing.JFrame {
             }
         });
 
+        btnEdit.setBackground(new java.awt.Color(255, 255, 102));
         btnEdit.setText("Edit");
         btnEdit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +132,7 @@ public class BankView extends javax.swing.JFrame {
             }
         });
 
+        btnTambah.setBackground(new java.awt.Color(204, 204, 204));
         btnTambah.setText("Setor");
         btnTambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +140,7 @@ public class BankView extends javax.swing.JFrame {
             }
         });
 
+        btnTarik.setBackground(new java.awt.Color(204, 204, 204));
         btnTarik.setText("Tarik");
         btnTarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -298,14 +303,6 @@ public class BankView extends javax.swing.JFrame {
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
         // TODO add your handling code here:
-//        if (selectedRowIndex != -1) {
-//        // Mengisi kolom input dengan data dari tabel yang dipilih
-//            txtNamaAwal.setText(tableModel.getValueAt(selectedRowIndex, 0).toString());
-//            txtNamaAkhir.setText(tableModel.getValueAt(selectedRowIndex, 1).toString());
-//            txtSaldo.setText(tableModel.getValueAt(selectedRowIndex, 2).toString());
-//
-//            toggleEditButtonVisibility(); // Sembunyikan tombol "Edit" kembali
-//        }
 
         int selectedRow = tableBank.getSelectedRow();
         if (selectedRow >= -1) {
@@ -382,14 +379,6 @@ public class BankView extends javax.swing.JFrame {
         clear();
     }//GEN-LAST:event_btnResetActionPerformed
 
- 
-    private void updateFieldsFromTable() {
-        if (selectedRowIndex != -1) {
-            txtNamaAwal.setText(tableModel.getValueAt(selectedRowIndex, 0).toString());
-            txtNamaAkhir.setText(tableModel.getValueAt(selectedRowIndex, 1).toString());
-            txtSaldo.setText(tableModel.getValueAt(selectedRowIndex, 2).toString());
-        }
-    }
     
     /**
      * @param args the command line arguments
